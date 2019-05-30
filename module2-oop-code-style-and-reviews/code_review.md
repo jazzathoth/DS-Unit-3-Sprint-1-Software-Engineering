@@ -14,22 +14,22 @@ At a minimum, review the code for the following:
 
 2. Each project is feature complete and works as expected.
   
-  2   \textit{(one very minor typo) }
+  2   *(one very minor typo)*
   
 3. There are no exceptions or warnings in your console or Chrome Developer Tools.
 
-  2:  \textit{(works, but the pypi package doesn't do anything yet. Code on github is excellent)}
+  2:  *(works, but the pypi package doesn't do anything yet. Code on github is excellent)*
 
 4. Code follows consistent naming conventions, language idioms, and style.
 
-  2:  \textit{Great job on demonstratin object oriented programming concepts.
-      Take a look at your indentation. Under some methods, the code isn't indented.
-      That's probably an editor thing. Easy fix}
+  2:  *{Great job on demonstratin object oriented programming concepts.*
+      *Take a look at your indentation. Under some methods, the code isn't indented.*
+      *That's probably an editor thing. Easy fix*
      
 5. Code is written by the student. If the code was written while pair programming, the student being reviewed should be prepared to distinguish the aspects which they worked on, but also be able to explain what their pair programming partner wrote.
 
-  3   \textit{Again, great job on demonstratin object oriented programming concepts. Code is very readable.
-      I really appreciate coding that doesn't need commenting, and this is that}
+  3   *Again, great job on demonstratin object oriented programming concepts. Code is very readable.*
+      *I really appreciate coding that doesn't need commenting, and this is that*
       
 
 ## Part II - Review Objectives
@@ -38,10 +38,14 @@ Objectives from the Training Kit are written in our 'Student can...' format, and
 
 1. Ask to see examples of each objective in the project.
 
-    \textit{}
+    **2**
+    *You seem to have a good understanding of object oriented programming. Just work on gettin your code*
+    *up to PEP8 specifications. Mainly a little more documentation as well as checking indentation*
 
 2. Ask the student to explain the code and how it demonstrates their mastery.
-
+    **3**
+    
+    
 #### Rating Scale
 
 | Score | Description |
