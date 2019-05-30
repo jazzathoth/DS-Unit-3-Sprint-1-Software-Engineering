@@ -14,11 +14,11 @@ At a minimum, review the code for the following:
 
 2. Each project is feature complete and works as expected.
   
-  2   *(one very minor typo)*
+      2   *(one very minor typo)*
   
 3. There are no exceptions or warnings in your console or Chrome Developer Tools.
 
-  2:  *(works, but the pypi package doesn't do anything yet. Code on github is excellent)*
+      2:  *(works, but the pypi package doesn't do anything yet. Code on github is looking good)*
 
 4. Code follows consistent naming conventions, language idioms, and style.
 
