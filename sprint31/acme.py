@@ -39,7 +39,7 @@ class Product:
             return('...BABOOM!!')
 
 
-class BoxingBlove(Product):
+class BoxingGlove(Product):
     def __init__(self, name, price=10, weight=10,
                  flammability=.5, identifier=randint(10000, 9000000)):
         self.name = name
