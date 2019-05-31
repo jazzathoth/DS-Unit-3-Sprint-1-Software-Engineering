@@ -20,10 +20,13 @@ class AcmeProductTests(unittest.TestCase):
         self.assertEqual(prod.explode(), '...BABOOM!!')
         self.assertEqual(prod.stealability(), 'Very stealable.')
 
-
+    """Test if parameters are the right data type"""
     def test_types(self):
         prod = Product('Test 3')
-        assert(type(prod.price) == int)
+        assert(type(prod.price) == int)        
+        assert(type(prod.weight) == int)
+        assert(type(prod.flammability) == float)
+        assert(type(prod.name) == str)
 
     def test_default_num_products(self):
         prods = generate_products()
@@ -31,11 +34,12 @@ class AcmeProductTests(unittest.TestCase):
 
     def test_legal_names(self):
         prods = generate_products()
-        NOUNS = [['Anvil'], ['Catapult'], ['Disguise'], ['Mousetrap'], ['???']]
-        ADJECTIVES = [['Awesome'], ['Shiny'], ['Impressive'], ['Portable'], ['Improved']]
+        NOUNS = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
+        ADJECTIVES = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
         for p in prods:
-            assert(p.name.split()[0] in x for x in ADJECTIVES)
-            assert(p.name.split()[1] in x for x in NOUNS)
+            n = p.name.split()
+            assert(n[0][2:-2:] in ADJECTIVES)
+            assert(n[1][2:-2:] in NOUNS)
 
 
 if __name__ == '__main__':
