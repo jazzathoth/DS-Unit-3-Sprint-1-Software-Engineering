@@ -34,8 +34,8 @@ class AcmeProductTests(unittest.TestCase):
         NOUNS = [['Anvil'], ['Catapult'], ['Disguise'], ['Mousetrap'], ['???']]
         ADJECTIVES = [['Awesome'], ['Shiny'], ['Impressive'], ['Portable'], ['Improved']]
         for p in prods:
-            assert(p.name.split()[0] in ADJECTIVES)
-            assert(p.name.split()[1] in NOUNS)
+            assert(p.name.split()[0] in x for x in ADJECTIVES)
+            assert(p.name.split()[1] in x for x in NOUNS)
 
 
 if __name__ == '__main__':
