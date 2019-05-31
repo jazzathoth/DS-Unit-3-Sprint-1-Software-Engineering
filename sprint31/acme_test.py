@@ -13,7 +13,6 @@ class AcmeProductTests(unittest.TestCase):
         self.assertEqual(prod.price, 10)
         self.assertEqual(prod.weight, 20)
 
-
     """Test explosion and stealibility"""
     def test_functions(self):
         prod = Product('Test 2', 20, 20, 3)
@@ -23,7 +22,7 @@ class AcmeProductTests(unittest.TestCase):
     """Test if parameters are the right data type"""
     def test_types(self):
         prod = Product('Test 3')
-        assert(type(prod.price) == int)        
+        assert(type(prod.price) == int)
         assert(type(prod.weight) == int)
         assert(type(prod.flammability) == float)
         assert(type(prod.name) == str)
@@ -44,3 +43,4 @@ class AcmeProductTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

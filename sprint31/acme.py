@@ -1,9 +1,16 @@
 #! /usr/bin/env/python
 
-import numpy as np
+from random import randint
+
 
 class Product:
-    def __init__(self, name, price=10, weight=20, flammability=.5, identifier=np.random.randint(10000,9000000)):
+    def __init__(self,
+                 name,
+                 price=10,
+                 weight=20,
+                 flammability=.5,
+                 identifier=randint(10000, 9000000)):
+
         self.name = name
         self.weight = weight
         self.price = price
@@ -28,13 +35,13 @@ class Product:
         else:
             return('...BABOOM!!')
 
-    
+
 class BoxingBlove(Product):
-    def __init__(self, name, price=10, weight=10, 
-            flammability=.5, identifier=np.random.randint(10000,9000000)):
+    def __init__(self, name, price=10, weight=10,
+                 flammability=.5, identifier=randint(10000, 9000000)):
         self.name = name
         self.price = price
-        self.weight = weight, 
+        self.weight = weight
         self.flammability = flammability
         self.identifier = identifier
 
@@ -42,4 +49,9 @@ class BoxingBlove(Product):
         return("...It's a glove.")
 
     def punch(self):
-        return("...That tickles")
+        if(self.weight < 5):
+            return("...That tickles")
+        elif((self.weight >= 5) & (self.weight < 15)):
+            return("Hey that hurt!")
+        else:
+            return("OUCH!")
