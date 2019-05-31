@@ -11,6 +11,7 @@ NOUNS = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
 
 
 def generate_products(num_products=30):
+    """Instantiates a list of 30 products and returns list"""
     products = []
     for x in range(num_products):
         products.append(Product("{} {}".format(sample(ADJECTIVES, 1),
@@ -22,6 +23,9 @@ def generate_products(num_products=30):
 
 
 def inventory_report(products):
+    """Creates a report of products by looping through
+    a list of products, collecting attributes, then printing
+    averages and counts of attributes"""
     names = []
     n_unique = []
     x_unique = 0

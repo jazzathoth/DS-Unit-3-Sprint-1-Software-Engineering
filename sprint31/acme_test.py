@@ -13,14 +13,14 @@ class AcmeProductTests(unittest.TestCase):
         self.assertEqual(prod.price, 10)
         self.assertEqual(prod.weight, 20)
 
-    """Test explosion and stealibility"""
     def test_functions(self):
+        """Test explosion and stealibility"""
         prod = Product('Test 2', 20, 20, 3)
         self.assertEqual(prod.explode(), '...BABOOM!!')
         self.assertEqual(prod.stealability(), 'Very stealable.')
 
-    """Test if parameters are the right data type"""
     def test_types(self):
+        """Test if parameters are the right data type"""
         prod = Product('Test 3')
         assert(type(prod.price) == int)
         assert(type(prod.weight) == int)
@@ -28,10 +28,12 @@ class AcmeProductTests(unittest.TestCase):
         assert(type(prod.name) == str)
 
     def test_default_num_products(self):
+        """Test number of products in the report """
         prods = generate_products()
         self.assertEqual(len(prods), 30)
 
     def test_legal_names(self):
+        """Check if the names are from the correct lists"""
         prods = generate_products()
         NOUNS = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
         ADJECTIVES = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']

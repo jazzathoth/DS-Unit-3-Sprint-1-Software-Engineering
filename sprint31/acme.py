@@ -4,6 +4,7 @@ from random import randint
 
 
 class Product:
+    """Set up a product, and set it's name and attributes"""
     def __init__(self,
                  name,
                  price=10,
@@ -17,6 +18,7 @@ class Product:
         self.flammability = flammability
         self.identifier = identifier
 
+    """Returns the likelyhood of product being stolen"""
     def stealability(self):
         s_ratio = self.price/self.weight
         if (s_ratio < 0.5):
@@ -26,6 +28,7 @@ class Product:
         else:
             return('Very stealable.')
 
+    """Returns explosivity of product"""
     def explode(self):
         boom = self.weight * self.flammability
         if (boom < 10):
@@ -45,9 +48,11 @@ class BoxingBlove(Product):
         self.flammability = flammability
         self.identifier = identifier
 
+    """See if a boxing glove explodes"""
     def explode(self):
         return("...It's a glove.")
 
+    """Test punch, see how much it hurts."""
     def punch(self):
         if(self.weight < 5):
             return("...That tickles")
